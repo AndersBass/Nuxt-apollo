@@ -1,4 +1,4 @@
-# scandesign
+# Nuxt/Apollo test
 
 ## Build Setup
 
