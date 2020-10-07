@@ -1,0 +1,13 @@
+query (
+  $options: PageQueryOptions
+) {
+  posts(options: $options) {
+    data {
+      id
+      title
+      body
+      user {id name email website company {name}}
+      comments{data {id name email body}}
+    }
+  }
+}

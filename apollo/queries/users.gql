@@ -1,0 +1,12 @@
+query (
+  $options: PageQueryOptions
+) {
+  users(options: $options) {
+    data {
+      name
+      username
+      address {street, suite, city, zipcode, geo { lat, lng }}
+      posts {data {id}}
+    }
+  }
+}
